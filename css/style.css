@@ -213,6 +213,10 @@
             align-items: center;
         }
 
+        .traitment-carousel{
+            display: none;
+        }
+
         .traitment-position{
             height: 100%;
             display: flex;
@@ -494,11 +498,15 @@
 
         .traitment-position{
             height: 100%;
-            display: flex;
+            display: none;
             width: 100vw;
             overflow-x: auto;
             flex-wrap: nowrap;
             justify-content: flex-start;
+        }
+
+        .traitment-carousel{
+            display: block;
         }
         
         .traitment-card{
@@ -676,6 +684,15 @@
             justify-content: flex-start;
             overflow-x: auto;
             width: 100vw;
+        }
+
+        .carousel-item img {
+            object-fit: cover !important;
+            height: 270px;
+        }
+
+        .carousel-item h5 {
+            background: rgba(255,255,255, .8);
         }
 
         .traitment-card{
