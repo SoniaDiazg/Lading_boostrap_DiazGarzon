@@ -333,6 +333,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                padding-bottom: 50px;
             }
             .date h2{
                 font-family: 'Bellota Text';
@@ -342,12 +343,82 @@
                 padding-top: 70px;
             }
 
-            .date p{
-                color: #000000;
-                background-color: rgb(255, 246, 127);
-                font-weight: bold;
-                padding: 5px;
+            .formulary{
+                display: flex;
+                padding-top: 20px;
+                width: 1193px;
+                justify-content: space-between;
             }
+
+            .formulary-img{
+                display: flex;
+                align-items: center;
+            }
+
+            .formulary-details{
+                Width: 691px;
+                Height: 550px;
+                background: #FFFFFF;
+                border: 5px solid #3A50BF;
+                border-radius: 40px 0px;
+                display: flex;
+                justify-content: center;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                height: 100%;
+                padding-top: 25px;
+            }
+
+            input, select{
+                height: 40px;
+                background: #FFFFFF;
+                border: 2px solid #3A50BF;
+                border-radius: 20px 0px;
+                padding-left: 30px;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            label{
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .formdate-hour{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .formdate-hour div{
+                width: 47%;
+            }
+
+            .button-privacidad{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            input[type=checkbox]{
+                width: auto;
+                margin-right: 6px;
+            }
+
+            .button-privacidad button{
+                background: #3A50BF;
+                border-radius: 20px 0px;
+                color: #ffffff;
+                width: 100px;
+            }
+
+            .button-privacidad div{
+                display: flex;
+                align-items: center;
+            }
+            
 
         
         /* fin seccion reserva tu cita */
