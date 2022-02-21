@@ -334,35 +334,34 @@
                 align-items: center;
                 flex-direction: column;
                 padding-bottom: 50px;
-            }
-            .date h2{
-                font-family: 'Bellota Text';
-                color:#ffffff;
-                text-align: center;
-                margin-top: 20px;
-                padding-top: 70px;
+                background: url("./../src/images/vector\ reserva\ cita.png") no-repeat center; 
+                background-size: cover;
+                padding-top: 83px;
+                z-index: 2;
             }
 
             .formulary{
                 display: flex;
-                padding-top: 20px;
+                padding-top: 92px;
                 width: 1193px;
                 justify-content: space-between;
             }
 
             .formulary-img{
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
+                padding-right: 55px;
             }
 
             .formulary-details{
                 Width: 691px;
-                Height: 550px;
+                Height: auto;
                 background: #FFFFFF;
                 border: 5px solid #3A50BF;
                 border-radius: 40px 0px;
                 display: flex;
                 justify-content: center;
+                padding-bottom: 20px;
             }
 
             form{
@@ -400,6 +399,7 @@
             .button-privacidad{
                 display: flex;
                 justify-content: space-between;
+                margin-top: 17px;
             }
 
             input[type=checkbox]{
@@ -412,6 +412,7 @@
                 border-radius: 20px 0px;
                 color: #ffffff;
                 width: 100px;
+                pointer-events: none;
             }
 
             .button-privacidad div{
@@ -419,6 +420,14 @@
                 align-items: center;
             }
             
+            input:focus::placeholder{
+                opacity: 0;
+            
+            }
+
+            .button-privacidad label{
+                cursor: pointer;
+            }
 
         
         /* fin seccion reserva tu cita */
@@ -427,11 +436,9 @@
 
         footer{
             background-color: #ffffff;
-            margin-top: 84px;
         }
 
         .contact{
-            margin-top: -50px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -580,21 +587,22 @@
             display: block;
         }
         
-        .traitment-card{
-            margin: 20px;
-            width: 40vw;
-            height: 367px;
-        }
-
-        .traitment-card img{
-            width: 40vw;
-        
+        .carousel img{
+            width: 100vw;
+            height: 545px;
+            object-fit: cover;
         }
 
         .traiment-card-title{
             font-size: 12px !important;
             margin-top: 16px;
             margin-left: 0px;
+        }
+
+        .carousel h5{
+            background: rgba(255,255,255, .8);
+            font-size: 18px;
+            font-weight: bold;
         }
     
     /*Fin seccion tratamientos*/
@@ -624,6 +632,19 @@
         }
 
     /*Fin sección precios*/
+
+    /*Formulario*/
+
+        .formulary{
+            padding-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulary-img{
+            margin-bottom: 36px;
+            padding-right: 0;
+        }
 
     /*Footer*/
 
@@ -798,14 +819,19 @@
 
     /*Seccion reserva tu cita*/
     
-        .date img{
-            width: 100vw;
-        }
+    .date img {
+        width: 74vw;
+    }
 
-        .date p{
-            font-size: 12px;
-            text-align: center;
-        }
+    .formulary-details {
+        Width: 88vw;
+        padding: 20px;
+    }
+
+    form{
+        width: unset;
+    }
+
 
     /*Fin seccion reserva tu cita*/
 

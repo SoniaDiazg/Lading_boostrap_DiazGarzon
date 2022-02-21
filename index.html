@@ -254,7 +254,6 @@
 
     <!-- reserva tu cita: se incluirá cuando aprendamos formularios-->
         <section id="date" class="date">
-            <h2 >RESERVA TU CITA</h2>
 
             <div class="formulary">
                 <div class="formulary-img">
@@ -264,23 +263,23 @@
                 <div class="formulary-details">
                     <form method="post" action="">
                         <label for="nombre">Nombre y apellidos</label>
-                        <input type="text" name="nombre">
+                        <input placeholder="Sergio Romero Garcia" type="text" name="nombre" required>
 
                         <label for="telefono">Nº telefono</label>
-                        <input type="tel">
+                        <input placeholder="611 11 11 11" type="tel" required>
 
                         <label for="email">Email</label>
-                        <input type="email">
+                        <input placeholder="hola@email.com" type="email" required>
 
                         <div class="formdate-hour">
                             <div>
                                 <label for="Fecha">Fecha</label>
-                                <input type="date" name="Fecha">
+                                <input type="date" name="Fecha" required>
                             </div>
 
                             <div>
                                 <label for="hora">Hora</label>
-                                <select name="hora" id="">
+                                <select name="hora" id="" required>
                                     <option value="-">-</option>
                                     <option value="10:00am">10:00am</option>
                                     <option value="11:00am">11:00am</option>
@@ -296,7 +295,7 @@
 
                         <div class="button-privacidad">
                             <div>
-                                <input name="privacidad" id="privacidad" type="checkbox">
+                                <input name="privacidad" id="privacidad" type="checkbox" required>
                                 <label for="privacidad">He leído y acepto la política de privacidad</label>
                             </div>
                             
